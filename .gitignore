@@ -1,0 +1,9 @@
+node_modules/
+client/dist/
+server/data/
+data/
+.env
+*.db
+*.db-wal
+*.db-shm
+.dev-master-key
