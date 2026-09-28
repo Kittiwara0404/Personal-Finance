@@ -143,6 +143,11 @@ export default function App() {
           </div>
         </aside>
         <main className="main">
+          {import.meta.env.MODE === 'demo' && (
+            <div className="alert warn small" style={{ marginBottom: 16 }}>
+              โหมดเดโม: ใช้ข้อมูลตัวอย่าง เก็บไว้ในเบราว์เซอร์นี้เท่านั้น และ AI ตอบด้วยกฎของระบบ (แอปจริงใช้ Claude)
+            </div>
+          )}
           <current.Comp {...props} />
         </main>
         <nav className="mobile-nav">
